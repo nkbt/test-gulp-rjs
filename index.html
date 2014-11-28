@@ -16,8 +16,11 @@
     baseUrl: 'build'
   });
 
-  require(['workers/worker'], function(worker) {
-    document.querySelector('pre').innerHTML = JSON.stringify(worker(), null, '\t');
+  require(['workers/first', 'workers/second'], function(first, second) {
+    document.querySelector('pre').innerHTML = JSON.stringify({
+      first: first(),
+      second: second()
+    }, null, '\t');
   })
 </script>
 

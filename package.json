@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git@github.com:nkbt/tet-gulp-rjs.git"
@@ -12,8 +11,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "amd-optimize": "^0.3.1",
     "gulp": "^3.8.10",
-    "gulp-r": "^1.1.2",
+    "gulp-concat": "^2.4.2",
     "requirejs": "^2.1.15"
   }
 }
